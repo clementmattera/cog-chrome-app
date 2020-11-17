@@ -91,6 +91,9 @@
   },
   "pluginsListLabel": {
     "message": "Plugins"
+  },
+  "userIdentityLabel": {
+    "message": "User Identity"
   }
 }
 

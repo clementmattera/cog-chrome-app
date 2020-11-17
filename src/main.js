@@ -11,6 +11,7 @@ function initLabels() {
   setLabel('operating-system', 'operatingSystemLabel');
   setLabel('platform', 'platformLabel');
   setLabel('chrome-version', 'chromeVersionLabel');
+  setLabel('user-identity', 'userIdentityLabel');
 
   setLabel('cpu-name', 'cpuNameLabel');
   setLabel('cpu-arch', 'cpuArchLabel');
@@ -163,6 +164,17 @@ function updateStorage() {
       externalStorage.classList.remove('hidden');
     }
   });
+}
+
+
+function initIdentity() {
+  chrome.identity.getProfileUserInfo( userInfo => {
+    let userIdentity = userInfo.email + " - " + userInfo.id ;
+    console.log(userInfo) ;
+    document.querySelector('#user-identity').textContent = userIdentity;
+
+  }
+  );
 }
 
 function initCpu() {
@@ -344,5 +356,6 @@ document.addEventListener('DOMContentLoaded', function() {
   initCpu();
   initMemory();
   initPlugins();
+  initIdentity();
   updateAll();
 });
