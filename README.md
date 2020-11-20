@@ -6,9 +6,9 @@ Cog - System Info Viewer is a simple [Chrome App](https://developer.chrome.com/a
 
 ## Getting the code
 
-You can download the whole source code [as one archive](https://github.com/beaufortfrancois/cog-chrome-app/archive/master.zip), or get it from the repository using git:
+You can download the whole source code [as one archive](https://github.com/openwengo/cog-chrome-app/archive/master.zip), or get it from the repository using git:
 
-    git clone git://github.com/beaufortfrancois/cog-chrome-app.git
+    git clone git://github.com/openwengo/cog-chrome-app.git
 
 ## Running the development version
 
